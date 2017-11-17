@@ -12,12 +12,12 @@ const destroy = (id: number) => {
     return empty('spDestroyChirp', [id]);
 };
 
-const create = (userid: number, message: string) => {
-    return row('spCreateChirp', [userid, message]);
+const create = (userId: number, message: string) => {
+    return row('spCreateChirp', [userId, message]);
 };
 
-const update = (id: number, userid: number, message: string) => {
-    return row('spUpdateChirps', [id, userid, message]);
+const update = (id: number, userId: number, message: string) => {
+    return row('spUpdateChirps', [id, userId, message]);
 };
 
 export default {
