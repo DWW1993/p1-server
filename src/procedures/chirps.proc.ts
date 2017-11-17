@@ -17,7 +17,7 @@ const create = (userid: number, message: string) => {
 };
 
 const update = (id: number, userid: number, message: string) => {
-    return row('spUpdateChirp', [id, userid, message]);
+    return row('spUpdateChirps', [id, userid, message]);
 };
 
 export default {
