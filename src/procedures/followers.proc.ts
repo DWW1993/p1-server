@@ -9,7 +9,7 @@ const destroy = (followingId: number) => {
 };
 
 const create = (followingId: number, followerId: number) => {
-    return empty('spCreateFollower', [followingId, followerId]);
+    return empty('spCreateFollower', [followerId, followingId]);
 }
 
 export default {
