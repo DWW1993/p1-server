@@ -14,7 +14,7 @@ const create = (username, email, password) => {
     return base_proc_1.row('spCreateUser', [username, email, password]);
 };
 const update = (id, username, email, password) => {
-    return base_proc_1.row('spUpdateUser', [id, username, email, password]);
+    return base_proc_1.empty('spUpdateUser', [id, username, email, password]);
 };
 exports.default = {
     all,

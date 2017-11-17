@@ -17,7 +17,7 @@ const create = (username: string, email: string, password: string) => {
 }
 
 const update = (id: number, username: string, email: string, password: string) => {
-    return row('spUpdateUser', [id, username, email, password]);
+    return empty('spUpdateUser', [id, username, email, password]);
 };
 
 export default {
