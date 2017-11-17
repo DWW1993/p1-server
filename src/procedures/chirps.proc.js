@@ -10,11 +10,11 @@ const read = (id) => {
 const destroy = (id) => {
     return base_proc_1.empty('spDestroyChirp', [id]);
 };
-const create = (userid, message) => {
-    return base_proc_1.row('spCreateChirp', [userid, message]);
+const create = (userId, message) => {
+    return base_proc_1.row('spCreateChirp', [userId, message]);
 };
-const update = (id, userid, message) => {
-    return base_proc_1.row('spUpdateChirps', [id, userid, message]);
+const update = (id, userId, message) => {
+    return base_proc_1.row('spUpdateChirps', [id, userId, message]);
 };
 exports.default = {
     all,
@@ -23,3 +23,4 @@ exports.default = {
     create,
     update
 };
+//just to test this shit commit 

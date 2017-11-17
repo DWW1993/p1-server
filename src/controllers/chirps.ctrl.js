@@ -20,13 +20,13 @@ exports.destroy = (req, res, next) => {
     });
 };
 exports.create = (req, res, next) => {
-    chirps_proc_1.default.create(req.body.userid, req.body.message)
+    chirps_proc_1.default.create(req.body.userId, req.body.message)
         .then((sets) => {
         res.json(sets);
     });
 };
 exports.update = (req, res, next) => {
-    chirps_proc_1.default.update(+req.params.id, req.body.userid, req.body.message)
+    chirps_proc_1.default.update(+req.params.id, req.body.userId, req.body.message)
         .then((sets) => {
         res.json(sets);
     });
