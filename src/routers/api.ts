@@ -10,7 +10,7 @@ router
     .use('/chirps', chirps)
     .use('/auth', auth)
     .use('/users', users)
-    .use('/users/following', followers);
+    .use('/following', followers);
 
 export default router;
 

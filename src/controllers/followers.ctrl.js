@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const followers_proc_1 = require("../procedures/followers.proc");
 exports.all = (req, res, next) => {
-    followers_proc_1.default.all()
+    followers_proc_1.default.all(+req.params.followerId)
         .then((sets) => {
         res.json(sets);
     });

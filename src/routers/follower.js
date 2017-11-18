@@ -4,7 +4,7 @@ const express_1 = require("express");
 const followers_ctrl_1 = require("../controllers/followers.ctrl");
 const router = express_1.Router();
 router
-    .get('/', followers_ctrl_1.all)
+    .get('/:followerId', followers_ctrl_1.all)
     .post('/', followers_ctrl_1.create)
-    .delete('/:followingId', followers_ctrl_1.destroy);
+    .delete('/:followerId', followers_ctrl_1.destroy);
 exports.default = router;

@@ -1,16 +1,16 @@
 import { rows, row, empty } from "./base.proc";
 
-const all = () => {
-    return rows('spGetFollowingChirps');   
+const all = (followerId: number) => {
+    return rows('spGetFollowingChirps', [followerId]);   
 };
 
-const destroy = (followingId: number) => {
-    return empty('spDeleteFollower', [followingId]);
+const destroy = (followerId: number) => {
+    return empty('spDeleteFollower', [followerId]);
 };
 
-const create = (followingId: number, followerId: number) => {
-    return empty('spCreateFollower', [followerId, followingId]);
-}
+const create = (followerId: number, followingId: number) => {
+    return row('spCreateFollower', [followerId, followingId]);
+};
 
 export default {
     all,

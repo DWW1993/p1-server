@@ -4,8 +4,8 @@ import { all, create, destroy } from '../controllers/followers.ctrl';
 const router: Router = Router();
 
 router
-    .get('/', all)
+    .get('/:followerId', all)
     .post('/', create)
-    .delete('/:followingId', destroy)
+    .delete('/:followerId', destroy)
 
 export default router;

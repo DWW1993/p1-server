@@ -10,5 +10,5 @@ router
     .use('/chirps', chirps_1.default)
     .use('/auth', auth_1.default)
     .use('/users', users_1.default)
-    .use('/users/following', follower_1.default);
+    .use('/following', follower_1.default);
 exports.default = router;

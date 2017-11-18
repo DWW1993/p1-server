@@ -3,7 +3,7 @@ import procedures from '../procedures/followers.proc';
 import { procedure } from "../config/db/index";
 
 export const all = (req: Request, res: Response, next: NextFunction) => {
-    procedures.all()
+    procedures.all(+req.params.followerId)
     .then((sets) => {
         res.json(sets);
     });
