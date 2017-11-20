@@ -36,3 +36,10 @@ export const update = (req: Request, res: Response, next: NextFunction) => {
         res.json(sets);
     });
 };
+
+export const userAll = (req: Request, res: Response, next: NextFunction) => {
+    procedures.userAll(+req.params.userId)
+    .then((sets) => {
+        res.json(sets);
+    });
+};

@@ -31,3 +31,9 @@ exports.update = (req, res, next) => {
         res.json(sets);
     });
 };
+exports.userAll = (req, res, next) => {
+    chirps_proc_1.default.userAll(+req.params.userId)
+        .then((sets) => {
+        res.json(sets);
+    });
+};

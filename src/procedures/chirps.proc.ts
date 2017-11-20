@@ -20,10 +20,15 @@ const update = (id: number, userId: number, message: string) => {
     return empty('spUpdateChirps', [id, userId, message]);
 };
 
+const userAll = (userId: number) => {
+    return rows('spGetChirpsByUser', [userId]);   
+};
+
 export default {
     all,
     read,
     destroy,
     create,
-    update
+    update,
+    userAll,
 };

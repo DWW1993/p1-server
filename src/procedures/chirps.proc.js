@@ -16,10 +16,14 @@ const create = (userId, message) => {
 const update = (id, userId, message) => {
     return base_proc_1.empty('spUpdateChirps', [id, userId, message]);
 };
+const userAll = (userId) => {
+    return base_proc_1.rows('spGetChirpsByUser', [userId]);
+};
 exports.default = {
     all,
     read,
     destroy,
     create,
-    update
+    update,
+    userAll,
 };
