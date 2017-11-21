@@ -10,11 +10,11 @@ const read = (id) => {
 const destroy = (id) => {
     return base_proc_1.empty('spDeleteUser', [id]);
 };
-const create = (username, email, password) => {
-    return base_proc_1.row('spCreateUser', [username, email, password]);
+const create = (handle, username, email, password) => {
+    return base_proc_1.row('spCreateUser', [handle, username, email, password]);
 };
-const update = (id, username, email, password) => {
-    return base_proc_1.empty('spUpdateUser', [id, username, email, password]);
+const update = (id, handle, username, email, password) => {
+    return base_proc_1.empty('spUpdateUser', [id, handle, username, email, password]);
 };
 exports.default = {
     all,

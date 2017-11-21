@@ -12,12 +12,12 @@ const destroy = (id: number) => {
     return empty('spDeleteUser', [id]);
 };
 
-const create = (username: string, email: string, password: string) => {
-    return row('spCreateUser', [username, email, password]);
+const create = (handle: string, username: string, email: string, password: string) => {
+    return row('spCreateUser', [handle, username, email, password]);
 }
 
-const update = (id: number, username: string, email: string, password: string) => {
-    return empty('spUpdateUser', [id, username, email, password]);
+const update = (id: number, handle: string, username: string, email: string, password: string) => {
+    return empty('spUpdateUser', [id, handle, username, email, password]);
 };
 
 export default {

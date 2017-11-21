@@ -24,14 +24,14 @@ export const destroy = (req: Request, res: Response, next: NextFunction) => {
 };
 
 export const create = (req: Request, res: Response, next: NextFunction) => {
-    procedures.create(req.body.username, req.body.email, req.body.password)
+    procedures.create(req.body.handle, req.body.username, req.body.email, req.body.password)
     .then((sets) => {
         res.json(sets);
     });
 };
 
 export const update = (req: Request, res: Response, next: NextFunction) => {
-    procedures.update(+req.params.id, req.body.username, req.body.email, req.body.password)
+    procedures.update(+req.params.id, req.body.handle, req.body.username, req.body.email, req.body.password)
     .then((sets) => {
         res.json(sets);
     });
