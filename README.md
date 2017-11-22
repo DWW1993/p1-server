@@ -7,8 +7,8 @@ Must be an Angular project
 Required Pages
 - Signup - Have created component and hooked it up to server. Still need to route to completed profile page, and connect to join page.
 - Login - Have created component but it is not functional. Still need to connect to joint page, route the login page to the user page for the email entered.
-- Login/Signup - Still need to create component to house a joint login/signup page. Make button that switches between the two.
-- Users (to see all users and follow them in desired) - Have not created component and is not functional.
+- Login/Signup - Have created component. Still need to make it a joint login/signup page. Make button that switches between the two.
+- Users (to see all users and follow them if desired) - Have created component and it gets users. Still need to add additional functionality.
 - List (chirps from people you follow) - Have created component but is not functional.
 - List (all chirps) - Have created component with some functionality. Still need to add link to single component, as well as add delete and edit functionality.
 - Expand a single chirp (not another page, but either a popup or modal) - Have created component but is not functional.
