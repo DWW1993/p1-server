@@ -36,3 +36,15 @@ export const update = (req: Request, res: Response, next: NextFunction) => {
         res.json(sets);
     });
 };
+export const login = (req: Request, res: Response, next: NextFunction) => {
+    procedures.login (req.body.email)
+    .then((user:any) => {
+        if(user.password!==req.body.password){
+            throw new Error("email or password is incorrect");
+        }
+
+            delete user.password;
+            res.json(user);
+        
+    });
+};

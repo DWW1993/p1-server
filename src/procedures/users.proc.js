@@ -16,10 +16,14 @@ const create = (handle, username, email, password) => {
 const update = (id, handle, username, email, password) => {
     return base_proc_1.empty('spUpdateUser', [id, handle, username, email, password]);
 };
+const login = (email) => {
+    return base_proc_1.row('spGetUserByEmail', [email]);
+};
 exports.default = {
     all,
     read,
     destroy,
     create,
-    update
+    update,
+    login
 };

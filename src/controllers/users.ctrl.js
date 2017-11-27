@@ -31,3 +31,13 @@ exports.update = (req, res, next) => {
         res.json(sets);
     });
 };
+exports.login = (req, res, next) => {
+    users_proc_1.default.login(req.body.email)
+        .then((user) => {
+        if (user.password !== req.body.password) {
+            throw new Error("email or password is incorrect");
+        }
+        delete user.password;
+        res.json(user);
+    });
+};

@@ -20,10 +20,14 @@ const update = (id: number, handle: string, username: string, email: string, pas
     return empty('spUpdateUser', [id, handle, username, email, password]);
 };
 
+const login = (email: string) => {
+    return row('spGetUserByEmail' , [email]);
+}
 export default {
     all,
     read,
     destroy,
     create,
-    update
+    update,
+    login
 };
