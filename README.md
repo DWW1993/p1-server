@@ -5,12 +5,12 @@
 Must be an Angular project
 
 Required Pages
-- Signup - Have created component and hooked it up to server. Still need to route to completed profile page.
-- Login - Have created component but it is not functional. Still need to route the login page to the user page for the email entered.
-- Users (to see all users and follow them if desired) - Have created component and it gets users. Still need to add additional functionality.
+- Signup - Able to create users. Still need to route to completed profile page.
+- Login - Not functional. Still need to route the login page to the user page for the email entered.
+- Users (to see all users and follow them if desired) - Able to get users. Still need to add additional functionality(follow users, navigate to single page).
 - List (chirps from people you follow) - Have created component but is not functional.
-- List (all chirps) - Have created component with some functionality, including single popup. Still need to add delete and edit functionality.
-- Expand a single chirp (not another page, but either a popup or modal) - Have created component and it is functional. Still need to add update and delete.
+- List (all chirps) - Created with single modal working. Still need to add edit functionality.
+- Expand a single chirp (not another page, but either a popup or modal) - Have created component and it is functional. Still need to add update.
 - User Account - Have created component, but is not functional.
 
 ## Back End
